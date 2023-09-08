@@ -189,7 +189,7 @@ Navbar
 }
 .nav-header{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   align-items: center;
 }
 .nav-btn{
@@ -201,6 +201,36 @@ Navbar
   justify-self: end;
 }
 
+@media screen and (min-width:768px){ /* min=> going up from minimum to 768, once wselet 3al 768 j'applique ces regles , donc a partir de 768 badde 7ott color shade og yellow*/ 
+  .nav{
+    background:var(--clr-primary-10);
+  }
+  .nav-btn{
+    display: none;
+  }
+  .nav-links{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    column-gap: 2rem;
+    justify-self: end;
+  }
+  .nav-links a{
+    text-transform: capitalize;
+    color: var(--clr-grey-1);
+    font-weight: bold;
+    letter-spacing: var(--spacing);
+    transition: var(--transition);
+  }
+  .nav-links a:hover{
+    color: var(--clr-primary-5);
+  }
+  .nav-center{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+}
 /*
 =============== 
 Sidebar
