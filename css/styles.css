@@ -365,7 +365,7 @@ margin-left: 0;
     grid-template-columns: 1fr 1fr;
   }
   
-  .hero-img::before{
+  .hero-img::before,.about-img::before{
     content: "";
     position: absolute;
     width: 100%;
@@ -406,6 +406,26 @@ About
 }
 .about-img{
   justify-self: center;
+}
+@media screen and (min-width:992px){
+  .about-center{
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-img{
+    /* to get the cadre in the right position qui entoure la photo de about.
+      sinon elle sera rattachee au parent relative initiale, 
+      pour cela on met ici position relative pour que le cadre se rattache au plus proche position relative
+    */
+    position: relative;
+  }
+  .about-img::before{
+    /* ovveride the cadre for the photo in about */
+    left: -2rem;
+  }
+  .about-info{
+    align-self: center;
+  }
+  
 }
 /*
 =============== 
