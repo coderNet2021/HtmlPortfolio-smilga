@@ -598,6 +598,8 @@ Connect
   position: relative;
   padding: 10rem 0 5rem 0;
   margin: 5rem 0;
+  -webkit-clip-path: polygon(50% 0%, 99% 18%, 100% 87%, 50% 100%, 0 86%, 0 18%);
+clip-path: polygon(50% 0%, 99% 18%, 100% 87%, 50% 100%, 0 86%, 0 18%);
 }
 .video-container{
   position:absolute;
@@ -634,6 +636,8 @@ Connect
   background: var(--clr-primary-10) ;
   padding: 3rem 5rem 12rem 5rem;
   text-align: center;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 }
 
 
