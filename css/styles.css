@@ -127,6 +127,11 @@ p {
     line-height: 1;
   }
 }
+.logo{
+  font-size: 3rem;
+  color: var(--clr-primary-5);
+  font-weight: bold;
+}
 /*  global classes */
 
 .btn {
